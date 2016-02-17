@@ -52,7 +52,7 @@ class elementA(unittest.TestCase):
             if action:
                 # 获取按钮文字，通过文字判断是否有红包
                 actionText = self.get_element_by_id(driver,"com.alipay.android.wallet.newyear:id/actionBtnText")
-                if not actionText or actionText.text == "" or actionText.text.find("播")!= -1 or actionText.text.find("享")!= -1 or actionText.text.find("观看")!= -1 || actionText.text.find("试试看")!= -1:
+                if not actionText or actionText.text == "" or actionText.text.find("播")!= -1 or actionText.text.find("享")!= -1 or actionText.text.find("观看")!= -1 or actionText.text.find("试试看")!= -1:
                     # 过滤无用弹出
                     pass
                 else:
